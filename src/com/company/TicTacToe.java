@@ -16,13 +16,15 @@ public class TicTacToe {
             }
         }
 
-        for(int i = 0; i < ticTacToeBoard.length; i++){
-            for(int j = 0; j < ticTacToeBoard.length; j++) {
-                System.out.println("|     " + ticTacToeBoard[i][j] + "     |");
+        System.out.println("-------------");
+        for(var row: ticTacToeBoard){
+            System.out.print("|");
+            for(var cell: row){
+                System.out.print(" " + cell + " |");
             }
-            System.out.println("-----------------------------------------------");
+            // new line
+            System.out.println("\n-------------");
         }
-        System.out.println(ticTacToeBoard[0][0]);
     }
 
     //create a visual board in terminal
